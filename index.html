@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="theme-color" content="#f4ecdf" />
+
+    <title>Retro Graphic Design Frontend | HTML &amp; CSS | Engy Saeed</title>
+
+    <meta
+      name="description"
+      content="A responsive retro-inspired frontend project by Engy Saeed, built with semantic HTML5 and modern CSS3, with a focus on graphic design, accessibility, SEO, and responsive UI."
+    />
+
+    <meta name="author" content="Engy Saeed" />
+    <meta name="robots" content="index, follow" />
+
+    <link
+      rel="canonical"
+      href="https://engy2003.github.io/retro-graphic-design-frontend/"
+    />
+
+    <link rel="icon" href="images/my logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="images/my logo.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+
+    <meta
+      property="og:url"
+      content="https://engy2003.github.io/retro-graphic-design-frontend/"
+    />
+
+    <meta
+      property="og:title"
+      content="Retro Graphic Design Frontend | HTML &amp; CSS | Engy Saeed"
+    />
+
+    <meta
+      property="og:description"
+      content="A responsive retro-inspired frontend project built with semantic HTML5 and modern CSS3, combining graphic design, accessibility, SEO, and responsive UI."
+    />
+
+    <meta
+      property="og:image"
+      content="https://engy2003.github.io/retro-graphic-design-frontend/images/vintage%20graphic%20design%20workspace.png"
+    />
+
+    <meta
+      property="og:image:alt"
+      content="Vintage-inspired graphic design workspace"
+    />
+
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="650" />
+    <meta property="og:image:height" content="350" />
+    <meta property="og:site_name" content="Retro Graphic Design Frontend" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta
+      name="twitter:url"
+      content="https://engy2003.github.io/retro-graphic-design-frontend/"
+    />
+
+    <meta
+      name="twitter:title"
+      content="Retro Graphic Design Frontend | HTML &amp; CSS | Engy Saeed"
+    />
+
+    <meta
+      name="twitter:description"
+      content="A responsive retro-inspired frontend project built with semantic HTML5 and modern CSS3."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://engy2003.github.io/retro-graphic-design-frontend/images/vintage%20graphic%20design%20workspace.png"
+    />
+
+    <meta
+      name="twitter:image:alt"
+      content="Vintage-inspired graphic design workspace"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Preload Hero Image -->
+    <link
+      rel="preload"
+      as="image"
+      href="images/vintage graphic design workspace.png"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://engy2003.github.io/retro-graphic-design-frontend/#website",
+            "url": "https://engy2003.github.io/retro-graphic-design-frontend/",
+            "name": "Retro Graphic Design Frontend",
+            "description": "A responsive retro-inspired frontend project built with semantic HTML5 and modern CSS3.",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://engy2003.github.io/retro-graphic-design-frontend/#person"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://engy2003.github.io/retro-graphic-design-frontend/#person",
+            "name": "Engy Saeed",
+            "jobTitle": "Graphic Designer",
+            "url": "https://engy2003.github.io/retro-graphic-design-frontend/",
+            "image": "https://engy2003.github.io/retro-graphic-design-frontend/images/my%20logo.png",
+            "knowsAbout": [
+              "Graphic Design",
+              "Visual Identity",
+              "Typography",
+              "Poster Design",
+              "Apparel Graphics",
+              "HTML5",
+              "CSS3",
+              "Responsive Web Design",
+              "Web Accessibility",
+              "Search Engine Optimization"
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- =====================================================
+         ACCESSIBILITY
+    ====================================================== -->
+
+    <a class="skip-link" href="#main-content"> Skip to main content </a>
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-left">
+          <li>
+            <a href="#about"> About Me </a>
+          </li>
+
+          <li>
+            <a href="#portfolio"> Portfolio </a>
+          </li>
+        </ul>
+
+        <div class="logo-container">
+          <a
+            class="logo-link"
+            href="#top"
+            aria-label="Return to the top of Engy Saeed's portfolio"
+          >
+            <img
+              class="logo"
+              src="images/my logo.png"
+              alt="Engy Saeed personal graphic design logo"
+              width="100"
+              height="100"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </a>
+        </div>
+
+        <ul class="nav-right">
+          <li>
+            <a href="#blog"> My Blog </a>
+          </li>
+
+          <li>
+            <a href="#contact"> Contact Me </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="site-main" id="main-content">
+      <!-- ===================================================
+           HERO
+      ==================================================== -->
+
+      <section
+        class="hero-section"
+        id="hero-section"
+        aria-labelledby="hero-title"
+      >
+        <div class="hero-text">
+          <h1 id="hero-title">ENGY SAEED</h1>
+
+          <h2 class="sub-heading">CRAFTING TIMELESS VISUAL IDENTITIES</h2>
+
+          <p>
+            I create vintage-inspired visual identities, bold typography,
+            posters, stickers, and apparel graphics—bringing expressive retro
+            aesthetics into thoughtful, contemporary design.
+          </p>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="images/vintage graphic design workspace.png"
+            alt="Vintage-inspired graphic design workspace featuring retro visual design elements"
+            width="650"
+            height="350"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn btn-primary"> VIEW MY WORK </a>
+
+          <a href="#contact" class="btn btn-secondary"> LET'S TALK </a>
+        </div>
+      </section>
+
+      <!-- ===================================================
+           ABOUT
+      ==================================================== -->
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="section-header">
+          <h2 id="about-title">ABOUT ME</h2>
+
+          <span class="separator" aria-hidden="true"> XXX </span>
+
+          <h3>
+            I AM A GRAPHIC DESIGNER
+            <span class="ampersand">&amp;</span>
+            VISUAL STORYTELLER
+          </h3>
+        </div>
+
+        <div class="about-grid">
+          <!-- Inspiration -->
+
+          <article class="about-col">
+            <div class="icon-circle" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                focusable="false"
+              >
+                <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+
+                <polyline points="17 2 12 7 7 2"></polyline>
+              </svg>
+            </div>
+
+            <h4>INSPIRATION</h4>
+
+            <h5>WHAT INFLUENCES MY DESIGN</h5>
+
+            <p>
+              I find inspiration in mystery, hidden details, and layered
+              narratives. Those ideas influence the way I approach identity
+              design, where a simple visual mark can reveal meaning through
+              shape, symbolism, and visual relationships.
+            </p>
+          </article>
+
+          <!-- Storytelling -->
+
+          <article class="about-col">
+            <div class="icon-circle" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                focusable="false"
+              >
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+            </div>
+
+            <h4>STORYTELLING</h4>
+
+            <h5>HOW I BUILD MEANING</h5>
+
+            <p>
+              I see design as a form of visual storytelling. My interest in
+              screenplay writing and world-building strengthens the way I think
+              about composition, sequence, and narrative—helping me create
+              visuals that communicate beyond the surface.
+            </p>
+          </article>
+
+          <!-- Apparel -->
+
+          <article class="about-col">
+            <div class="icon-circle" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                focusable="false"
+              >
+                <path
+                  d="M20.66 6.98l-3.35-2.02A10.02 10.02 0 0 0 12 4a10.02 10.02 0 0 0-5.31.96L3.34 6.98A2 2 0 0 0 2 8.7V11a2 2 0 0 0 2 2h2v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-7h2a2 2 0 0 0 2-2V8.7a2 2 0 0 0-1.34-1.72z"
+                ></path>
+              </svg>
+            </div>
+
+            <h4>APPAREL</h4>
+
+            <h5>WHERE DESIGN BECOMES WEARABLE</h5>
+
+            <p>
+              I enjoy translating lettering, color, and illustration into
+              wearable graphics. Stickers and apparel give me room to explore
+              expressive retro aesthetics while keeping each composition bold,
+              memorable, and production-ready.
+            </p>
+          </article>
+
+          <!-- Structure -->
+
+          <article class="about-col">
+            <div class="icon-circle" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                focusable="false"
+              >
+                <polyline points="16 18 22 12 16 6"></polyline>
+
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+
+            <h4>STRUCTURE</h4>
+
+            <h5>HOW I WORK</h5>
+
+            <p>
+              I balance creative exploration with a structured, detail-focused
+              approach. My interest in interfaces and organization helps me
+              create work that feels expressive while remaining clear,
+              consistent, and ready for real-world use.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===================================================
+           PORTFOLIO
+      ==================================================== -->
+
+      <section
+        class="portfolio-section"
+        id="portfolio"
+        aria-labelledby="portfolio-title"
+      >
+        <div class="portfolio-header">
+          <h2 id="portfolio-title">PORTFOLIO</h2>
+
+          <span class="separator" aria-hidden="true"> XXX </span>
+
+          <h3>
+            SIMPLICITY, CHARACTER,
+            <span class="ampersand">&amp;</span>
+            PURPOSE
+          </h3>
+        </div>
+
+        <div class="portfolio-filters" aria-label="Portfolio project filters">
+          <span class="filter-label"> Filter by </span>
+
+          <button class="filter-btn active" type="button" aria-pressed="true">
+            All
+          </button>
+
+          <button class="filter-btn" type="button" aria-pressed="false">
+            Logos
+          </button>
+
+          <button class="filter-btn" type="button" aria-pressed="false">
+            Posters
+          </button>
+
+          <button class="filter-btn" type="button" aria-pressed="false">
+            Stickers
+          </button>
+
+          <button class="filter-btn" type="button" aria-pressed="false">
+            Apparel
+          </button>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Project 1 -->
+
+          <article class="portfolio-card">
+            <div class="card-image">
+              <img
+                src="images/poster.jpeg"
+                alt="Retro poster illustration of a confident roller skater wearing a roller derby helmet and striped shirt, with geometric shapes and a disco ball"
+                width="200"
+                height="200"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="card-content">
+              <div class="card-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  focusable="false"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+
+                  <path d="M21 15l-5-5L5 21"></path>
+                </svg>
+              </div>
+
+              <h4>VINTAGE RIDER ART</h4>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+
+          <article class="portfolio-card">
+            <div class="card-image">
+              <img
+                src="images/my logo.png"
+                alt="Retro roller derby-inspired portrait illustration of a woman wearing a helmet and striped shirt"
+                width="200"
+                height="200"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="card-content">
+              <div class="card-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  focusable="false"
+                >
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+
+                  <polyline points="2 17 12 22 22 17"></polyline>
+
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+
+              <h4>ROLLER DERBY PORTRAIT</h4>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+
+          <article class="portfolio-card">
+            <div class="card-image">
+              <img
+                src="images/sticker.png"
+                alt="Retro-inspired sticker artwork featuring bold graphic shapes and roller derby visual elements"
+                width="200"
+                height="200"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="card-content">
+              <div class="card-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  focusable="false"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+
+                  <path d="M12 8v8"></path>
+
+                  <path d="M8 12h8"></path>
+                </svg>
+              </div>
+
+              <h4>RETRO GROOVE STICKERS</h4>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+
+          <article class="portfolio-card">
+            <div class="card-image">
+              <img
+                src="images/tshirt.png"
+                alt="White crewneck t-shirt mockup featuring a colorful 70s-inspired roller derby graphic with geometric stripes and a disco ball"
+                width="200"
+                height="200"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="card-content">
+              <div class="card-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  focusable="false"
+                >
+                  <path
+                    d="M20.66 6.98l-3.35-2.02A10.02 10.02 0 0 0 12 4a10.02 10.02 0 0 0-5.31.96L3.34 6.98A2 2 0 0 0 2 8.7V11a2 2 0 0 0 2 2h2v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-7h2a2 2 0 0 0 2-2V8.7a2 2 0 0 0-1.34-1.72z"
+                  ></path>
+                </svg>
+              </div>
+
+              <h4>VINTAGE SKATER APPAREL</h4>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===================================================
+           BLOG
+      ==================================================== -->
+
+      <section class="blog-section" id="blog" aria-labelledby="blog-title">
+        <div class="blog-header">
+          <h2 id="blog-title">MY BLOG</h2>
+
+          <span class="separator" aria-hidden="true"> XXX </span>
+
+          <h3>
+            INSIGHTS ON DESIGN
+            <span class="ampersand">&amp;</span>
+            FRONT-END
+          </h3>
+        </div>
+
+        <div class="blog-container">
+          <!-- Post 1 -->
+
+          <article class="blog-post">
+            <div class="post-image">
+              <img
+                src="images/Semantic HTML & SEO.png"
+                alt="Illustration representing semantic HTML and search engine optimization"
+                width="250"
+                height="180"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="post-content">
+              <a href="#" class="post-title">
+                Semantic HTML
+                <span class="ampersand">&amp;</span>
+                SEO: The Invisible Design
+              </a>
+
+              <div class="post-meta">
+                <time datetime="2026-09"> SEPTEMBER 2026 </time>
+
+                <span aria-hidden="true"> // </span>
+
+                <span> BY ENGY SAEED </span>
+
+                <span aria-hidden="true"> // </span>
+
+                <span> WEB DEVELOPMENT, SEO </span>
+              </div>
+
+              <p>
+                A practical look at how semantic HTML strengthens structure,
+                accessibility, and search visibility—and why good web design
+                should work beneath the surface as well as above it.
+              </p>
+            </div>
+          </article>
+
+          <!-- Post 2 -->
+
+          <article class="blog-post">
+            <div class="post-image">
+              <img
+                src="images/Retro CSS.png"
+                alt="Retro-inspired web design illustration demonstrating modern CSS techniques"
+                width="250"
+                height="180"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="post-content">
+              <a href="#" class="post-title">
+                Translating Retro Aesthetics into Modern CSS
+              </a>
+
+              <div class="post-meta">
+                <time datetime="2026-08"> AUGUST 2026 </time>
+
+                <span aria-hidden="true"> // </span>
+
+                <span> BY ENGY SAEED </span>
+
+                <span aria-hidden="true"> // </span>
+
+                <span> CSS, UI DESIGN </span>
+              </div>
+
+              <p>
+                Exploring how CSS Grid, custom properties, and SVG can bring
+                retro visual language into responsive interfaces without
+                sacrificing clarity, structure, or performance.
+              </p>
+            </div>
+          </article>
+
+          <!-- Post 3 -->
+
+          <article class="blog-post">
+            <div class="post-image">
+              <img
+                src="images/Visual Storytelling.png"
+                alt="Visual storytelling and brand identity design concept"
+                width="250"
+                height="180"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="post-content">
+              <a href="#" class="post-title">
+                Visual Storytelling in Brand Identity
+              </a>
+
+              <div class="post-meta">
+                <time datetime="2026-07"> JULY 2026 </time>
+
+                <span aria-hidden="true"> // </span>
+
+                <span> BY ENGY SAEED </span>
+
+                <span aria-hidden="true"> // </span>
+
+                <span> BRANDING, CREATIVE </span>
+              </div>
+
+              <p>
+                Exploring how narrative thinking can shape identity systems,
+                from symbolic marks to visual compositions that communicate
+                personality, meaning, and a stronger point of view.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <a href="#" class="btn-show-all"> SHOW ALL POSTS </a>
+      </section>
+
+      <!-- ===================================================
+           CONTACT
+      ==================================================== -->
+
+      <section
+        class="contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-header">
+          <h2 id="contact-title">CONTACT ME</h2>
+
+          <span class="separator" aria-hidden="true"> XXX </span>
+
+          <h3>LET'S DISCUSS YOUR NEXT CREATIVE PROJECT.</h3>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <div class="form-field">
+            <label for="name" class="sr-only"> Your name </label>
+
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Name"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="email" class="sr-only"> Your email address </label>
+
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Email address"
+              autocomplete="email"
+              inputmode="email"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="subject" class="sr-only"> Message subject </label>
+
+            <input
+              id="subject"
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="message" class="sr-only"> Your message </label>
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your message"
+              rows="6"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-footer">
+            <button type="submit" class="btn-submit">SEND MESSAGE</button>
+
+            <div class="captcha">
+              <label for="captcha" class="captcha-label"> 2 + 3 = </label>
+
+              <input
+                id="captcha"
+                type="text"
+                name="captcha"
+                class="captcha-input"
+                inputmode="numeric"
+                autocomplete="off"
+                required
+              />
+            </div>
+          </div>
+        </form>
+
+        <div class="social-section">
+          <h4>I AM SOCIAL</h4>
+
+          <div class="social-icons">
+            <!-- LinkedIn -->
+
+            <a href="#" aria-label="Visit Engy Saeed on LinkedIn">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+              </svg>
+            </a>
+
+            <!-- GitHub -->
+
+            <a href="#" aria-label="Visit Engy Saeed on GitHub">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+
+            <!-- Behance -->
+
+            <a href="#" aria-label="Visit Engy Saeed on Behance">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.546-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-16h5.363c3.363 0 4.646 2.703 4.646 4.232 0 2.285-1.542 3.161-2.022 3.398 1.488.356 2.375 2.067 2.375 3.755 0 2.803-1.727 4.615-3.896 4.615zm-2.466-8.988h2.001c1.545 0 2.008-1.225 2.008-2.006 0-2.148-1.475-2.021-1.956-2.021h-2.053v4.027zm0 5.426h2.24c1.196 0 2.502-.857 2.502-2.392 0-2.478-2.128-2.42-2.525-2.42h-2.217v4.812z"
+                />
+              </svg>
+            </a>
+
+            <!-- Email -->
+
+            <a href="#" aria-label="Email Engy Saeed">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+         FIXED BACK TO TOP
+    ====================================================== -->
+
+    <a href="#top" class="back-to-top" aria-label="Back to the top of the page">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path d="M12 19V5"></path>
+
+        <path d="M6 11l6-6 6 6"></path>
+      </svg>
+    </a>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>© 2026 Engy Saeed. Designed &amp; Developed by Engy Saeed.</p>
+      </div>
+    </footer>
+  </body>
+</html>
